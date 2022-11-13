@@ -1,0 +1,50 @@
+System.out.println("      //_//_");
+System.out.println("  __ / * * /");
+System.out.println(" /__       |");
+System.out.println(" \\____     \\_________________");
+System.out.println("      \\                   \\__ \\");
+System.out.println("       |                   \\ \\ \\");
+System.out.println("       |  _  ________  _   / / /");
+System.out.println("      / / / /       / / / /  |_|");
+System.out.println("     / / / /       / / / /");
+System.out.println("     \\ \\ \\ \\       \\ \\ \\ \\");
+System.out.println("      \\ \\ \\ \\       \\ \\ \\ \\");
+System.out.println("      /_| /_|       /_| /_|");
+
+
+System.out.println("      //_//_");
+System.out.println("  __ / * * /");
+System.out.println(" /__       |");
+System.out.println(" \\____     \\_________________");
+System.out.println("      \\                   \\__ \\");
+System.out.println("       |                   \\ \\ \\");
+System.out.println("       |  __   _____   _   / / /");
+System.out.println("       | |  | |     | | | |  |_|");
+System.out.println("       | |  | |     | | | |");
+System.out.println("       | |  | |     | | | |");
+System.out.println("       | |  | |     | | | |");
+System.out.println("      /__| /__|    /__|/__|");
+
+String s = "Strings are immutable";
+      s = s.concat(" all the time");
+      System.out.println(s);
+
+
+==========================================
+stamina\\t:
+
+
+
+
+==========================================\\n
+                main menu\\n
+==========================================\\n
+1. Profile\\n
+2. Kebun\\n
+3. Kandang\\n
+4. Tambang\\n
+5. Toko\\n
+6. Kuda\\n
+7. Assisten\\n
+0. Play time\\n
+x. Exit
