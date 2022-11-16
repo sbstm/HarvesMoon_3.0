@@ -1,6 +1,7 @@
 package database.display;
 
 import database.dataaset.Data_assisten;
+import database.dataaset.Data_hewan;
 import database.dataaset.Data_tumbuhan;
 import database.datauser.Main_data;
 
@@ -20,34 +21,29 @@ public class Profile {
                 System.out.println(
                                 "============== Kebun ================\n==========================================");
                 System.out.println("\nJenis Tanaman\t: " + Data_tumbuhan.getJenis(Data_tumbuhan.getIndek())
-                                + "\nUkuran\t: "
-                                + "Lima x Lima" + "\nWaktu panen\t: "
-                                + Data_tumbuhan.getMasa_tumbuh(Data_tumbuhan.getIndek()) + "\nPanen dalam\t: "
+                                + "\nUkuran\t\t: Lima x Lima\nWaktu panen\t: "
+                                + Data_tumbuhan.getMasa_tumbuh(Data_tumbuhan.getIndek()) + " bulan\nPanen dalam\t: "
                                 + (Data_tumbuhan.getMasa_tumbuh(Data_tumbuhan.getIndek())
                                                 - Data_tumbuhan.getSelangpanen())
-                                + " bulan ");
+                                + " bulan\nStatus siram\t: "
+                                + Data_tumbuhan.getSiram());
         }
 
         public static void kandang() {
                 System.out.println(
-                                "============== Kebun ================\n==========================================");
-                System.out.println("\nJenis Tanaman\t: " + Data_tumbuhan.getJenis(Data_tumbuhan.getIndek())
-                                + "\nUkuran\t: "
-                                + "Lima x Lima" + "\nWaktu panen\t: "
-                                + Data_tumbuhan.getMasa_tumbuh(Data_tumbuhan.getIndek()) + "\nPanen dalam\t: "
-                                + (Data_tumbuhan.getMasa_tumbuh(Data_tumbuhan.getIndek())
-                                                - Data_tumbuhan.getSelangpanen())
-                                + " bulan ");
+                                "============== kandang ================\n==========================================");
+                System.out.println("\nJumlah ayam\t: " + Data_hewan.getJumlah(1)
+                                + "\nJumlah sapi\t: " + Data_hewan.getJumlah(0));
         }
 
         public static void Assisten() {
                 System.out.println(
                                 "============= Assisten ==============\n==========================================");
-                System.out.println("\n\n\tAsisten anda");
+                System.out.printf("\n\n\tAsisten anda");
                 if (Data_assisten.getRawat() == true) {
-                        System.out.println(" Masih bekerja ");
+                        System.out.printf(" Masih bekerja\n\n");
                 } else {
-                        System.out.println(" belum di sewa ");
+                        System.out.printf(" belum di sewa\n\n");
                 }
         }
 }

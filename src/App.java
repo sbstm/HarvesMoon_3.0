@@ -49,7 +49,8 @@ public class App {
                     if (Data_kuda.getTes() == 1) {
                         Main_menu.Kuda();
                     } else {
-                        System.out.println("Kamu Belum Memiliki Kuda");
+                        System.out.println("\n\n\n\t\t\tKamu Belum Memiliki Kuda\n\n\n");
+                        Main_menu.pause();
                     }
                     break;
                 case '7':

@@ -6,7 +6,9 @@ import java.util.Scanner;
 import database.algoritma.play_time;
 import database.algoritma.tambang;
 import database.dataaset.Data_assisten;
+import database.dataaset.Data_hewan;
 import database.dataaset.Data_kuda;
+import database.dataaset.Data_tumbuhan;
 import database.display.tumbuhan;
 import database.toko.Toko_hewan;
 import database.toko.Toko_tumbuhan;
@@ -58,15 +60,11 @@ public class Sub_menu {
 
     public static void Kandang() {
         System.out.println(
-                "============ Kandang menu ============\n==========================================\n1. Liat Kandang\n2. Kasih Makan Peliharaan \n0. Back");
+                "============ Kandang menu ============\n==========================================\n1. Liat Kandang\n0. Back");
         int input = sc.nextInt();
         switch (input) {
             case 1:
-                database.display.hewan.sapi();
-                database.display.hewan.ayam();
-                break;
-            case 2:
-                tambang.Gegerkalong();
+                database.display.hewan.panggil();
                 break;
             default:
                 Main_menu.menu();
@@ -97,14 +95,30 @@ public class Sub_menu {
         int input = sc.nextInt();
         switch (input) {
             case 1:
+                System.out.println(
+                        "\n- Sapi menghasilkan susu dengan harga jual 100 Rupiah\n- Ayam menghasilkan telur dengan harga jual 20 Rupiah");
+                System.out.println(
+                        "\n2. Sapi 1500/ekor\n2. Ayam 150 Rp/ekor");
                 int i = sc.nextInt();
+
+                System.out.printf(
+                        "Beli %s sebanyak: ", Data_hewan.getJenis(i - 1));
                 int j = sc.nextInt();
-                Toko_hewan.beli(i, j);
+                Toko_hewan.beli(i - 1, j);
                 break;
             case 2:
+                System.out.println(
+                        "lama tumbuh tanaman:\n- cabe\t\t4 bulan\n- bawang\t3 bulan\n- kentang\t2 bulan\n- kol\t\t2 bulan\n- jagung\t2 bulan\n");
+                System.out.println(
+                        "Harga jual:\n- cabe\t\t120 Rp/buah\n- bawang\t90 Rp/buah\n- kentang\t50 Rp/buah\n- kol\t\t35 Rp/buah\n- jagung\t20 Rp/buah\n");
+                System.out.println(
+                        "Harga bibit:\n1.cabe\t\t50 Rp/bibit\n2.bawang\t35 Rp/bibit\n3.kentang\t20 Rp/bibit\n4.kol\t\t15 Rp/bibit\n5.jagung\t5 Rp/bibit\n");
                 i = sc.nextInt();
+
+                System.out.printf(
+                        "Beli %s sebanyak: ", Data_tumbuhan.getJenis(i - 1));
                 j = sc.nextInt();
-                Toko_tumbuhan.beli(i, j);
+                Toko_tumbuhan.beli(i - 1, j);
                 break;
             default:
                 Main_menu.menu();
@@ -140,6 +154,9 @@ public class Sub_menu {
             case 2:
                 Data_assisten.setRawat(false);
                 break;
+                case 3:
+                database.display.Profile.Assisten();
+                break;
             default:
                 Main_menu.menu();
                 break;
@@ -147,8 +164,6 @@ public class Sub_menu {
     }
 
     public static void Play_time() throws InterruptedException, IOException {
-        System.out.println(
-                "============= Play_time ==============\n==========================================\n1. Liat Kebun\n2. Siram Tanaman \n0. Back");
         play_time.bulan();
     }
 

@@ -6,7 +6,7 @@ import database.datauser.Main_data;
 
 public class Toko_hewan {
     public static void beli(int input, int banyak) {
-        Data_hewan.setJumlah(input-1,Data_hewan.getJumlah(input-1)+banyak);
+        Data_hewan.setJumlah(input,Data_hewan.getJumlah(input)+banyak);
         Data_temp.setDuit_hewan(Data_hewan.getH_beli(input) * banyak);
         Main_data.setDuit(Main_data.getDuit() - Data_temp.getDuit_hewan());
         System.out.println("kamu telah membeli " +Data_hewan.getJenis(input)+" sebanyak "+ banyak);

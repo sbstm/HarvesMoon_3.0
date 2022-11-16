@@ -12,19 +12,19 @@ public abstract class Data_hewan {
     protected static int tk_hewan = 0;
 
     public static String getPola(int pilih) {
-        return pola[pilih-1];
+        return pola[pilih];
     }
 
     public static String getJenis(int pilih) {
-        return jenis[pilih-1];
+        return jenis[pilih];
     }
 
     public static int getH_jual(int pilih) {
-        return h_jual[pilih-1];
+        return h_jual[pilih];
     }
 
     public static int getH_beli(int pilih) {
-        return h_beli[pilih - 1];
+        return h_beli[pilih];
     }
 
     public static int getTk_hewan() {

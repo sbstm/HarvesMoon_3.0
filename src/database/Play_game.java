@@ -33,7 +33,7 @@ public class Play_game {
         t2.start();
         synchronized (t2) {
             new ProcessBuilder("cmd", "/c", "cls").inheritIO().start().waitFor();
-            System.out.println("\n\n\n\n\n\n\t\t\tIni adalah cerita " + Main_data.getNama() + " yang hidup di desa"
+            System.out.println("\n\n\n\n\n\n\t\t\tIni adalah cerita " + Main_data.getNama() + " yang hidup di desa "
                     + Main_data.getDesa() + "\n\n\n\n\n\n");
             Main_menu.pause();
             new ProcessBuilder("cmd", "/c", "cls").inheritIO().start().waitFor();
@@ -48,7 +48,9 @@ public class Play_game {
         t2.start();
         synchronized (t2) {
             new ProcessBuilder("cmd", "/c", "cls").inheritIO().start().waitFor();
-            System.out.println("\n\n\n\n\n\n\t\t\tKamu Kelelahan Uang kamu Akan berkurang 500 dan Waktu akan berlanjut pada bulan selanjutnya\n\n\n\n\n\n");
+            System.out.println(
+                    "\n\n\n\n\n\n\t\t\tKamu Kelelahan Uang kamu Akan berkurang 500 dan Waktu akan berlanjut pada bulan selanjutnya\n\n\n\n\n\n");
+            
             Main_menu.pause();
         }
     }

@@ -12,19 +12,19 @@ public class hewan {
                 System.out.printf("|#    ");
             }
         }
-        System.out.println("===== ===== ===== =====");
+        System.out.println("\n===== ===== ===== =====");
     }
 
     public static void ayam() {
         System.out.println("==== ==== ==== ==== ==== ==== ==== ====");
-        for (int i = 0; i < 4; i++) {
+        for (int i = 0; i < 8; i++) {
             if (i < Data_hewan.getJumlah(1)) {
                 System.out.printf("|#" + Data_hewan.getPola(1) + " ");
             } else {
-                System.out.printf("|#    ");
+                System.out.printf("|#   ");
             }
         }
-        System.out.println("==== ==== ==== ====");
+        System.out.println("\n==== ==== ==== ==== ==== ==== ==== ====");
     }
     public static void panggil() {
         System.out.println("\n\n___Kandang Ayam__\n");

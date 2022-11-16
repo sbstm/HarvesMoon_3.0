@@ -1,6 +1,6 @@
 package database.dataaset;
 
-public class Data_tambang {
+public abstract class Data_tambang {
 
     protected static String[] polabatu = { "o", "O", "0" };
     protected static String[] pola = { "$$$", "$$", "$" };

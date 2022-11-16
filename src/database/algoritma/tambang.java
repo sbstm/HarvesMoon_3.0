@@ -97,6 +97,7 @@ public class tambang extends Data_tambang {
             olah2(input);
             display();
         }
+        
     }
 
     public static void olah(int input) {
@@ -108,7 +109,7 @@ public class tambang extends Data_tambang {
         for (int i = 0; i < 5; i++) {
             for (int j = 0; j < 5; j++) {
                 if (tambang.lokasi[i][j] == "0" || tambang.lokasi[i][j] == "o" || tambang.lokasi[i][j] == "O") {
-                    if (temp3 <= input) {
+                    if (temp3 < input) {
                         temp2 = 0;
                         tenaga = tenaga - 7;
                         hitung_tenaga = hitung_tenaga + 7;
@@ -138,7 +139,8 @@ public class tambang extends Data_tambang {
         }
         Main_data.setStamina(tenaga);
         Data_temp.setStamina(hitung_tenaga);
-        Main_data.setDuit(Main_data.getDuit()+Data_temp.getDuit_tambang());
+        Main_data.setDuit(Main_data.getDuit() + Data_temp.getDuit_tambang());
+        tambang.total_batu=0;
     }
 
     public static void olah2(int input) {
@@ -149,8 +151,8 @@ public class tambang extends Data_tambang {
         int hitung_tenaga = Data_temp.getStamina();
         for (int i = 0; i < 6; i++) {
             for (int j = 0; j < 6; j++) {
-                if (tambang.lokasi[i][j] == "0" || tambang.lokasi[i][j] == "o" || tambang.lokasi[i][j] == "O") {
-                    if (temp3 <= input) {
+                if (tambang.lokasi2[i][j] == "0" || tambang.lokasi2[i][j] == "o" || tambang.lokasi2[i][j] == "O") {
+                    if (temp3 < input) {
                         temp2 = 0;
                         tenaga = tenaga - 7;
                         hitung_tenaga = hitung_tenaga + 7;
@@ -180,7 +182,8 @@ public class tambang extends Data_tambang {
         }
         Main_data.setStamina(tenaga);
         Data_temp.setStamina(hitung_tenaga);
-        Main_data.setDuit(Main_data.getDuit()+Data_temp.getDuit_tambang());
+        Main_data.setDuit(Main_data.getDuit() + Data_temp.getDuit_tambang());
+        tambang.total_batu=0;
     }
 
     public static void display() {
@@ -192,6 +195,10 @@ public class tambang extends Data_tambang {
         System.out.println("\n==================================\n");
         System.out.println("dan menghabiskan stamina sebesar " + Data_temp.getStamina() + "\ndan stamina yang tersisa "
                 + Main_data.getStamina());
+        Banyak_emas = 0;
+        Banyak_silver= 0;
+        Banyak_perak = 0;
+        Banyak_batu = 0;
     }
 
     public static String getLokasi(int i, int j) {

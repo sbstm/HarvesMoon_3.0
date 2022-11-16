@@ -149,7 +149,7 @@ public class Data_kuda {
         System.out.println("\n\n\n\n\n\n\t\t\tpada Bulan ini kamu mendapat kuda\n\n\n\n\n\n");
         Main_menu.pause();
         new ProcessBuilder("cmd", "/c", "cls").inheritIO().start().waitFor();
-        System.out.println("\n\n\n\n\n\n\t\t\tsilahkan masukan nama kudanya ");
+        System.out.printf("\n\n\n\n\n\n\t\t\tsilahkan masukan nama kudanya ");
         setNama_kuda();
         System.out.println("\n\n\n\n\n\n");
         Main_menu.pause();
@@ -157,7 +157,7 @@ public class Data_kuda {
 
     public static void absen() {
         String nama = Main_data.getNama();
-        System.out.println("\n\n\n\n\n\n\t\t\tmakasih boss " + nama + " kamu memang terbaik\n\n\n\n\n\n");
+        System.out.println("\n\n\n\n\n\n\t\t\t"+Data_kuda.getNama_kuda()+" : makasih boss " + nama + " kamu memang terbaik\n\n\n\n\n\n");
         Main_menu.pause();
     }
 }

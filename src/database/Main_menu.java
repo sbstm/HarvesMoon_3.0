@@ -7,9 +7,11 @@ public class Main_menu {
 
     static Scanner sc = new Scanner(System.in);
     
-    public static char pilihmenu() {
+    public static char pilihmenu() throws InterruptedException, IOException {
         char menu;
         System.out.printf("pilih menu :");
+        Set_data.habis_stamina();
+        Set_data.Habis_duit();
         menu = sc.next().charAt(0);
         return menu;
     }
