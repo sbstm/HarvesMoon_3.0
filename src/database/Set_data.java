@@ -19,6 +19,7 @@ public class Set_data {
         Main_data.setStamina(100);
         Main_data.setDuit(750);
         tambang.setTotal(0);
+        Data_tumbuhan.setIndek(5);
     }
 
     public static void bulanan() {

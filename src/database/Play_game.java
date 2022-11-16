@@ -7,9 +7,11 @@ import database.datauser.Main_data;
 
 public class Play_game {
 
+    static Scanner sc = new Scanner(System.in);
+
     public static void start() {
 
-        Scanner sc = new Scanner(System.in);
+        
 
         System.out.println("=======================================================");
         System.out.println("====================Harvesmoon.java====================");
@@ -28,7 +30,6 @@ public class Play_game {
 
     public static void opening() throws InterruptedException, IOException {
         Thread t2 = new Thread();
-        Scanner sc = new Scanner(System.in);
         t2.start();
         synchronized (t2) {
             new ProcessBuilder("cmd", "/c", "cls").inheritIO().start().waitFor();
@@ -44,7 +45,6 @@ public class Play_game {
     
     public static void kelelahan() throws InterruptedException, IOException {
         Thread t2 = new Thread();
-        Scanner sc = new Scanner(System.in);
         t2.start();
         synchronized (t2) {
             new ProcessBuilder("cmd", "/c", "cls").inheritIO().start().waitFor();

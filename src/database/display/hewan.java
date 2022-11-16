@@ -1,9 +1,9 @@
-package database.datauser;
+package database.display;
 
 import database.dataaset.Data_hewan;
 
-interface Data_user {
-    public static void bulan324() {
+public class hewan {
+    public static void sapi() {
         System.out.println("===== ===== ===== =====");
         for (int i = 0; i < 4; i++) {
             if (i < Data_hewan.getJumlah(0)) {
@@ -14,11 +14,11 @@ interface Data_user {
         }
         System.out.println("===== ===== ===== =====");
     }
-    
-    public static void bulan34(){
+
+    public static void ayam() {
         System.out.println("==== ==== ==== ==== ==== ==== ==== ====");
         for (int i = 0; i < 4; i++) {
-            if (i<Data_hewan.getJumlah(1)) {
+            if (i < Data_hewan.getJumlah(1)) {
                 System.out.printf("|#" + Data_hewan.getPola(1) + " ");
             } else {
                 System.out.printf("|#    ");
@@ -26,7 +26,11 @@ interface Data_user {
         }
         System.out.println("==== ==== ==== ====");
     }
-
-
-    
+    public static void panggil() {
+        System.out.println("\n\n___Kandang Ayam__\n");
+        ayam();
+        System.out.println("\n\n___Kandang Sapi__\n");
+        sapi();
+        
+    }
 }

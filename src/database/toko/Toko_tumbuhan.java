@@ -1,6 +1,5 @@
 package database.toko;
 
-import database.algoritma.kebun;
 import database.dataaset.Data_tumbuhan;
 import database.datauser.Data_temp;
 import database.datauser.Main_data;
@@ -12,6 +11,5 @@ public class Toko_tumbuhan {
         Data_temp.setDuit_tumbuhan(Data_tumbuhan.getH_beli(input) * banyak);
         Main_data.setDuit(Main_data.getDuit() - Data_temp.getDuit_tumbuhan());
         Data_tumbuhan.setSelangpanen(Data_tumbuhan.getIndek());
-        
     }
 }

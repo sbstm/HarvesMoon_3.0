@@ -59,7 +59,7 @@ public class Main_menu {
                 pause();
     }
 
-    public static void Toko() {
+    public static void Toko() throws InterruptedException, IOException {
         System.out.println(
                 "Toko");
                 Sub_menu.Toko();
@@ -80,7 +80,7 @@ public class Main_menu {
                 pause();
     }
 
-    public static void Play_time() {
+    public static void Play_time() throws InterruptedException, IOException {
         System.out.println(
                 "Play time");
                 Sub_menu.Play_time();

@@ -1,14 +1,8 @@
 import database.Main_menu;
 import database.Play_game;
 import database.Set_data;
-import database.algoritma.tambang;
 import database.dataaset.Data_kuda;
-import database.dataaset.Data_tambang;
-import database.dataaset.Data_tumbuhan;
 import database.datauser.Main_data;
-import database.display.Tambang;
-import database.display.tumbuhan;
-import database.toko.Toko_tumbuhan;
 
 import java.io.IOException;
 

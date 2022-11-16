@@ -3,7 +3,6 @@ package database.display;
 import java.io.IOException;
 
 import database.Main_menu;
-import database.datauser.Main_data;
 
 public class Game_over {
 
